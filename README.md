@@ -11,7 +11,7 @@ docker build -t lyndadl .
 
 ```console
 mkdir -p courses
-docker run -v /full/path/to/host/directory/courses:/root/dlcourses lyndadl -u youruser@domain.com -p yourpassword  https://www.lynda.com/URLOFTHECOURSE
+docker run --name lyndadownload --rm -v /full/path/to/host/directory/courses:/root/dlcourses lyndadl -u youruser@domain.com -p yourpassword  https://www.lynda.com/URLOFTHECOURSE
 ```  
 
 ## Help
